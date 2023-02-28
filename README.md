@@ -14,10 +14,11 @@
 
 
 # tgSSH
-Telegram bot that can execute commands on a remote Linux server and send the output back to the you via Telegram.
+Telegram bot that can execute commands on a remote Linux server and send the output back to you via Telegram.
 
 Using this bot you can control you linux server over ssh using TELEGRAM
-  • Just run the tgssh.sh wait for the necessary packages to be installed
+HOW TO USE:
+  • Just run the tgssh.sh script, wait for the necessary packages to be installed
   • Provide the necessary credentials
   • Just wait few seconds, and then SURPRISE your bot is waiting for you
   • Just be shure that the tgssh.py file is located in the same directiory as the tgssh.sh file
