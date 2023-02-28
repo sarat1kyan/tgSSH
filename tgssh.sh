@@ -23,15 +23,16 @@ yellow='\e[1;33m'
 echo ""
 echo ""
 banner() {
-	echo -e $'\e[1;33m\e[0m\e[1;37m                                                         \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m      _|                  _|_|_|    _|_|_|  _|    _|     \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m    _|_|_|_|    _|_|_|  _|        _|        _|    _|     \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m      _|      _|    _|    _|_|      _|_|    _|_|_|_|     \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m      _|      _|    _|        _|        _|  _|    _|     \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m        _|_|    _|_|_|  _|_|_|    _|_|_|    _|    _|     \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m                    _|                                   \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m                _|_|                                     \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m                                                         \e[0m'
+	echo -e $'\e[1;33m\e[0m\e[1;37m                                                      \e[0m'
+	echo -e $'\e[1;33m\e[0m\e[1;37m      ▄▄▄█████▓  ▄████   ██████   ██████  ██░ ██      \e[0m'
+	echo -e $'\e[1;33m\e[0m\e[1;37m      ▓  ██▒ ▓▒ ██▒ ▀█▒▒██    ▒ ▒██    ▒ ▓██░ ██▒     \e[0m'
+	echo -e $'\e[1;33m\e[0m\e[1;37m      ▒ ▓██░ ▒░▒██░▄▄▄░░ ▓██▄   ░ ▓██▄   ▒██▀▀██░     \e[0m'
+	echo -e $'\e[1;33m\e[0m\e[1;37m      ░ ▓██▓ ░ ░▓█  ██▓  ▒   ██▒  ▒   ██▒░▓█ ░██      \e[0m'
+	echo -e $'\e[1;33m\e[0m\e[1;37m        ▒██▒ ░ ░▒▓███▀▒▒██████▒▒▒██████▒▒░▓█▒░██▓     \e[0m'
+	echo -e $'\e[1;33m\e[0m\e[1;37m        ▒ ░░    ░▒   ▒ ▒ ▒▓▒ ▒ ░▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒     \e[0m'
+	echo -e $'\e[1;33m\e[0m\e[1;37m          ░      ░   ░ ░ ░▒  ░ ░░ ░▒  ░ ░ ▒ ░▒░ ░     \e[0m'
+	echo -e $'\e[1;33m\e[0m\e[1;37m        ░      ░ ░   ░ ░  ░  ░  ░  ░  ░   ░  ░░ ░     \e[0m'
+	echo -e $'\e[1;33m\e[0m\e[1;37m                     ░       ░        ░   ░  ░  ░     \e[0m'
 	
 	echo ""    
 	echo -e $'\e[1;33m\e[0m\e[1;33m    ██████████\e[0m'"\e[96m██████████"'\e[1;33m\e[0m\e[1;31m██████████\e[0m' '\e[1;32m\e[0m\e[1;32m control you remote server via telegram \e[0m''\e[1;37m\e[0m\e[1;37m \e[0m'                                       
@@ -39,7 +40,7 @@ banner() {
 	echo -e $'\e[1;33m\e[0m\e[1;33m  [ \e[0m\e[1;32m Follow on Github :- https://github.com/54R4T1KY4N \e[0m \e[1;32m\e[0m\e[1;33m] \e[0m'
 	echo ""
 	echo -e $'\e[1;37m\e[0m\e[1;37m    +-+-+-+-+-+-+-+ >>\e[0m'
-	echo -e "\e[93m    tgSSH |1|.|2| stable"      
+	echo -e "\e[93m    tgSSH |1|.|2| beta"      
 	echo -e $'\e[1;37m\e[0m\e[1;37m    +-+-+-+-+-+-+-+ >>\e[0m' 
 	echo ""                                                
 }
