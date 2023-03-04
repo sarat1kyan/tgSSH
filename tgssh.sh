@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "okaaaay let's go..."
+
 banner1() {
   local text="$@"
   local length=$(( ${#text} + 2 ))
