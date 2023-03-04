@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "okaaaay let's go..."
+echo "okaaaay, let's go..."
 
 banner1() {
   local text="$@"
