@@ -2,59 +2,13 @@
 
 echo "okaaaay, let's go..."
 
-banner1() {
-  local text="$@"
-  local length=$(( ${#text} + 2 ))
-  local line=$(printf '%*s' "$length" '' | tr ' ' '-')
-  echo "+$line+"
-  printf "| %s |\n" "$(date)"
-  echo "+$line+"
-  printf "|$bold%s$reset|\n" "$text"
-  echo "+$line+"
-}
-
-banner1 "WELCOME TO THE MAIN INSTALLER, PLEASE MAKE SURE YOU HAVE DOWNLOADED THE tgssh.py FILE"
-
-
-#clolors
-white='\e[1;37m'
-green='\e[0;32m'
-blue='\e[1;34m'
-red='\e[1;31m'
-yellow='\e[1;33m' 
-echo ""
-echo ""
-banner() {
-	echo -e $'\e[1;33m\e[0m\e[1;37m                                                      \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m      ▄▄▄█████▓  ▄████   ██████   ██████  ██░ ██      \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m      ▓  ██▒ ▓▒ ██▒ ▀█▒▒██    ▒ ▒██    ▒ ▓██░ ██▒     \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m      ▒ ▓██░ ▒░▒██░▄▄▄░░ ▓██▄   ░ ▓██▄   ▒██▀▀██░     \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m      ░ ▓██▓ ░ ░▓█  ██▓  ▒   ██▒  ▒   ██▒░▓█ ░██      \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m        ▒██▒ ░ ░▒▓███▀▒▒██████▒▒▒██████▒▒░▓█▒░██▓     \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m        ▒ ░░    ░▒   ▒ ▒ ▒▓▒ ▒ ░▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒     \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m          ░      ░   ░ ░ ░▒  ░ ░░ ░▒  ░ ░ ▒ ░▒░ ░     \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m        ░      ░ ░   ░ ░  ░  ░  ░  ░  ░   ░  ░░ ░     \e[0m'
-	echo -e $'\e[1;33m\e[0m\e[1;37m                     ░       ░        ░   ░  ░  ░     \e[0m'
-	
-	echo ""    
-	echo -e $'\e[1;33m\e[0m\e[1;33m    ██████████\e[0m'"\e[96m██████████"'\e[1;33m\e[0m\e[1;31m██████████\e[0m' '\e[1;32m\e[0m\e[1;32m control you remote server via telegram \e[0m''\e[1;37m\e[0m\e[1;37m \e[0m'                                       
-	echo ""
-	echo -e $'\e[1;33m\e[0m\e[1;33m  [ \e[0m\e[1;32m Follow on Github :- https://github.com/54R4T1KY4N \e[0m \e[1;32m\e[0m\e[1;33m] \e[0m'
-	echo ""
-	echo -e $'\e[1;37m\e[0m\e[1;37m    +-+-+-+-+-+-+-+ >>\e[0m'
-	echo -e "\e[93m    tgSSH |1|.|2| beta"      
-	echo -e $'\e[1;37m\e[0m\e[1;37m    +-+-+-+-+-+-+-+ >>\e[0m' 
-	echo ""                                                
-}
-banner 
-
 # Check if the user is root
 if [[ $EUID -ne 0 ]]; then
-   banner1 "This script must be run as root"
+   echo "This script must be run as root"
    exit 1
 fi
 
-banner1 "please provide the necessary credentials"
+echo "please provide the necessary credentials"
 
 # Prompt for Telegram bot token
 read -p "Enter your Telegram bot token: " bot_token
@@ -71,7 +25,7 @@ read -p "Enter your SSH username: " ssh_username
 # Prompt for SSH password
 read -s -p "Enter your SSH password: " ssh_password
 
-banner1 "checking if the necesery packages exist..."
+echo "checking if the necesery packages exist..."
 
 # Define the package managers to check for
 pkg_managers=("apt-get" "dnf" "yum" "zypper" "pacman" "emerge" "apk" "xbps-install" "opkg")
@@ -115,14 +69,14 @@ do
         break
         
         else
-            banner1 "Error: Unsupported Linux distribution."
+            echo "Error: Unsupported Linux distribution."
             exit 1
 
     fi
 done
 
 if [[ -z $(command -v python3) ]]; then
-    banner1 "Python3 not found. Install it manually and try again."
+    echo "Python3 not found. Install it manually and try again."
     exit 1
 fi
 
