@@ -35,16 +35,14 @@ Before you begin, ensure you have the following:
 **Installation** 🔧
 
 1. Clone the Repository
-	
-	git clone https://github.com/yourusername/tgSSH.git
-	cd tgSSH
+  
+   git clone https://github.com/yourusername/tgSSH.git && cd tgSSH
 
 4. Run the Setup Script
 
 Execute the setup script that installs necessary dependencies and configures the environment.
 
-    $ chmod +x setup.sh
-    $ sudo ./setup.sh
+    chmod +x setup.sh && sudo ./setup.sh
 
 3. Provide Required Credentials
 
